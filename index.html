@@ -465,6 +465,43 @@
     margin-bottom:10px;
   }
 
+  /* Facility strip */
+  .facility-strip{ padding:56px 0; border-bottom:1px solid var(--paper-line); }
+  .facility-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:4px;
+  }
+  .facility-grid img{
+    width:100%;
+    height:440px;
+    object-fit:cover;
+    display:block;
+    border:1px solid var(--paper-line);
+  }
+  .facility-caption{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:18px;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .facility-caption a{
+    color:var(--red);
+    text-decoration:none;
+    border-bottom:1px solid var(--red);
+  }
+  .facility-caption a:hover{ color:var(--red-deep); }
+  @media (max-width: 680px){
+    .facility-grid{ grid-template-columns:1fr; }
+    .facility-grid img{ height:320px; }
+    .facility-caption{ flex-direction:column; align-items:flex-start; gap:8px; }
+  }
+
   /* Services */
   .services{
     display:grid;
@@ -795,6 +832,19 @@
         <div class="fact"><dt>Own student base</dt><dd>120+ private students (separate from institutional partners)</dd></div>
         <div class="fact"><dt>Institutional experience</dt><dd>Remote faculty for a U.S. music college since its collaboration with CCM began</dd></div>
       </dl>
+    </div>
+  </section>
+
+  <section class="facility-strip fade-up">
+    <div class="wrap">
+      <div class="facility-grid">
+        <img src="facility-window.jpg" alt="View into a recording room at CODA Music School's campus in Mexico City">
+        <img src="facility-producer.jpg" alt="A CODA student producing music in the studio">
+      </div>
+      <div class="facility-caption">
+        <span>Our facilities in Mexico City</span>
+        <a href="https://codamusicschool.com" target="_blank" rel="noopener">codamusicschool.com &#8599;</a>
+      </div>
     </div>
   </section>
 
