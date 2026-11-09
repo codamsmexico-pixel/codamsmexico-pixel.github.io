@@ -256,6 +256,28 @@
     color:var(--ink-soft);
     margin-bottom:18px;
   }
+  .hook-label{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin-bottom:16px !important;
+  }
+  .hook-list p{
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:14px !important;
+    padding-left:20px;
+    position:relative;
+  }
+  .hook-list p:not(.hook-label)::before{
+    content:"—";
+    position:absolute;
+    left:0;
+    color:var(--red);
+  }
+  .hook-list p:last-child{ margin-bottom:0 !important; }
 
   .waveline{
     width:100%;
@@ -641,7 +663,7 @@
       <div>
         <p class="kicker">Academic Outsourcing · Remote Faculty Partnerships</p>
         <h1>Exceptional music faculty.<br>Without the <em>hiring complexity</em>.</h1>
-        <p class="hero-sub">CODA Music School places experienced, specialized music educators inside college and university programs — fully aligned to your curriculum, calendar, and academic standards. Backed by real experience teaching inside U.S. higher music education.</p>
+        <p class="hero-sub">CODA Music School places specialized music educators inside college and university programs — proven across five consecutive terms teaching inside a U.S. music college.</p>
         <div class="hero-ctas">
           <a class="cta" href="#contact">Explore a Faculty Partnership</a>
           <a class="cta ghost" href="#faculty">Meet Our Faculty</a>
@@ -650,9 +672,11 @@
           <path d="M0 20 L40 20 L54 6 L68 34 L82 12 L96 28 L110 20 L160 20 L174 2 L188 36 L202 10 L216 30 L230 20 L300 20 L314 8 L328 32 L342 14 L356 26 L370 20 L440 20 L454 4 L468 34 L482 12 L496 28 L510 20 L560 20"/>
         </svg>
       </div>
-      <div class="hero-aside">
-        <p>CODA instructors have taught remotely inside California College of Music across five consecutive academic terms — contributing to songwriting, production, and artist development coursework for a U.S. institution.</p>
-        <p>This page introduces that experience to academic deans, program directors, and department chairs considering remote or hybrid faculty support.</p>
+      <div class="hero-aside hook-list">
+        <p class="hook-label" style="padding-left:0;">Why deans take the call</p>
+        <p>Five consecutive terms inside a U.S. music college</p>
+        <p>Faculty trained at Berklee College of Music</p>
+        <p>One point of contact, not five separate hires</p>
       </div>
     </div>
   </section>
@@ -687,7 +711,7 @@
         </div>
       </div>
       <p class="measure" style="font-size:16px; color:var(--ink-soft);">
-        CODA Music School is a contemporary music education institution headquartered in Mexico City, founded and directed by José Laín — composer, producer, and graduate of Berklee College of Music in Boston. CODA runs its own in-person and online programs year-round, and separately from its institutional partnerships, has taught more than 120 private students through that operation. Its instructor network spans performance, composition, songwriting, music production, and music technology.
+        CODA Music School is a contemporary music education institution headquartered in Mexico City, founded and directed by José Laín — a Berklee College of Music graduate. Its instructor network of roughly 20 educators covers performance, composition, songwriting, and production.
       </p>
       <dl class="facts">
         <div class="fact"><dt>Modalities</dt><dd>In-person &amp; online instruction</dd></div>
@@ -727,8 +751,7 @@
       <h2 style="margin:14px 0 36px; max-width:18ch;">The Berklee Connection</h2>
       <div class="berklee-row">
         <div>
-          <p style="font-size:16px; color:var(--ink-soft);">José Laín studied at Berklee College of Music in Boston from 2011 to 2015, with a dual concentration in Contemporary Writing &amp; Production and Songwriting. That training — rigorous, performance-driven, and built around the professional music industry — shapes how CODA selects and prepares the instructors it places with partner institutions.</p>
-          <p style="font-size:16px; color:var(--ink-soft);">Several members of CODA's instructor network trained at Berklee and other respected contemporary music programs, pairing formal music education with active careers in performance, composition, and production.</p>
+          <p style="font-size:16px; color:var(--ink-soft);">José Laín studied at Berklee College of Music in Boston (2011–2015), with a dual concentration in Contemporary Writing &amp; Production and Songwriting — training that shapes how CODA selects and prepares every instructor it places. Several members of CODA's network share that Berklee background, paired with active careers in the industry.</p>
         </div>
         <div class="credential">
           <strong>José Laín</strong>
@@ -750,29 +773,29 @@
         <p class="kicker">§04 — How Institutions Work With Us</p>
         <div>
           <h2>Faculty solutions built around your program.</h2>
-          <p class="lede">Four ways institutions typically engage CODA — scoped to your courses, calendar, and staffing needs through a personalized proposal.</p>
+          <p class="lede">Four ways to engage CODA, scoped to your program through a personalized proposal.</p>
         </div>
       </div>
       <div class="services">
         <div class="service">
           <div class="letter">A</div>
           <h3>Remote Faculty Partnerships</h3>
-          <p>Our core service. Specialized CODA instructors teach your students remotely, integrated into your program under your academic calendar and standards — the same model used across our collaboration with California College of Music.</p>
+          <p>Our core service — CODA instructors teach your students remotely, under your calendar and standards.</p>
         </div>
         <div class="service">
           <div class="letter">B</div>
           <h3>Faculty Augmentation</h3>
-          <p>Temporary or recurring support for an existing department — covering specific courses, absorbing enrollment growth, or adding a specialty your current faculty doesn't offer.</p>
+          <p>Temporary or recurring support to cover courses, enrollment growth, or a specialty gap.</p>
         </div>
         <div class="service">
           <div class="letter">C</div>
           <h3>Curriculum &amp; Specialized Courses</h3>
-          <p>Collaboration on contemporary songwriting, music production, and creative-project coursework. Scope and deliverables are evaluated per engagement, not offered as a fixed package.</p>
+          <p>Collaboration on songwriting and production coursework, scoped per engagement.</p>
         </div>
         <div class="service">
           <div class="letter">D</div>
           <h3>Online &amp; Hybrid Education Support</h3>
-          <p>Faculty who integrate into distance or hybrid programs on your terms — your institution sets the academic objectives; CODA supplies the specialized teaching talent.</p>
+          <p>Faculty who integrate into your distance or hybrid program on your terms.</p>
         </div>
       </div>
     </div>
@@ -833,13 +856,12 @@
       <div class="founder-row">
         <div>
           <div class="monogram" aria-hidden="true">JL</div>
-          <p class="founder-note">Faculty portraits and full instructor profiles will be added here as our partnership roster expands. Complete faculty bios are available on request during a partnership conversation.</p>
+          <p class="founder-note">Full instructor profiles and photos available on request.</p>
         </div>
         <div>
           <p class="founder-cred">Founder &amp; Academic Director</p>
-          <p style="font-size:16.5px;">José Laín is a musician, composer, producer, and academic director. He studied at Berklee College of Music in Boston from 2011 to 2015, completing a dual concentration in Contemporary Writing &amp; Production and Songwriting.</p>
-          <p style="font-size:16.5px;">Beyond directing CODA Music School, José has taught university-level coursework in composition, production, orchestration, sound design, and collaborative music projects — including CODA's remote faculty engagement with California College of Music. His work as a composer and producer has placed music in international audiovisual productions.</p>
-          <p style="font-size:16.5px;">He leads CODA's instructor network and personally oversees faculty matching for every institutional partnership.</p>
+          <p style="font-size:16.5px;">José Laín is a musician, composer, producer, and academic director. He studied at Berklee College of Music in Boston (2011–2015), with a dual concentration in Contemporary Writing &amp; Production and Songwriting.</p>
+          <p style="font-size:16.5px;">Beyond directing CODA, he has taught university-level composition and production — including CODA's remote faculty engagement with California College of Music — and personally leads faculty matching for every partnership.</p>
         </div>
       </div>
     </div>
@@ -851,7 +873,7 @@
         <div class="contact-info">
           <p class="kicker">§08 — Next Steps</p>
           <h2 style="margin:14px 0 0; max-width:14ch;">Let's build your next academic partnership.</h2>
-          <p>Tell us about your program and the courses or faculty you're looking to support. We'll follow up to discuss fit, scope, and next steps — no obligation.</p>
+          <p>Tell us what your program needs. We'll follow up with fit, scope, and next steps — no obligation.</p>
           <a class="email" href="mailto:coda.ms.mexico@gmail.com">coda.ms.mexico@gmail.com</a>
         </div>
         <form id="partnerForm">
