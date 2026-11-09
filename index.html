@@ -553,6 +553,50 @@
     color:var(--ink-faint);
     background:var(--paper-raised);
   }
+  .founder-photo{
+    width:100%;
+    aspect-ratio:1;
+    object-fit:cover;
+    border:1px solid var(--paper-line);
+    background:var(--paper-raised);
+  }
+  .faculty-label{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin:64px 0 24px;
+  }
+  .faculty-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--paper-line);
+    border:1px solid var(--paper-line);
+  }
+  .faculty-card{ background:var(--paper); }
+  .faculty-card img{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    display:block;
+  }
+  .faculty-card .info{ padding:18px 20px; }
+  .faculty-card .name{
+    font-family:var(--serif);
+    font-size:18px;
+    font-weight:500;
+  }
+  .faculty-card .role{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ink-faint);
+    margin-top:4px;
+  }
+  @media (max-width: 920px){
+    .faculty-grid{ grid-template-columns:1fr; }
+  }
   .founder-note{
     font-size:13px;
     color:var(--ink-faint);
@@ -721,7 +765,7 @@
       </div>
       <div class="ledger-item">
         <div class="ledger-label">Founder &amp; Director</div>
-        <div class="ledger-value">José Laín — <span>Berklee</span>, Boston</div>
+        <div class="ledger-value">Jose Lain — <span>Berklee</span>, Boston</div>
       </div>
       <div class="ledger-item">
         <div class="ledger-label">Instructor Network</div>
@@ -743,7 +787,7 @@
         </div>
       </div>
       <p class="measure" style="font-size:16px; color:var(--ink-soft);">
-        CODA Music School is a contemporary music education institution headquartered in Mexico City, founded and directed by José Laín — a Berklee College of Music graduate. Its instructor network of roughly 20 educators covers performance, composition, songwriting, and production.
+        CODA Music School is a contemporary music education institution headquartered in Mexico City, founded and directed by Jose Lain — a Berklee College of Music graduate. Its instructor network of roughly 20 educators covers performance, composition, songwriting, and production.
       </p>
       <dl class="facts">
         <div class="fact"><dt>Modalities</dt><dd>In-person &amp; online instruction</dd></div>
@@ -767,7 +811,7 @@
           <div class="panel-facts">
             <div class="fact"><dt>Partner institution</dt><dd>California College of Music, Los Angeles area</dd></div>
             <div class="fact"><dt>Engagement length</dt><dd>5 consecutive academic terms</dd></div>
-            <div class="fact"><dt>CODA faculty deployed</dt><dd>José Laín + 4 instructors</dd></div>
+            <div class="fact"><dt>CODA faculty deployed</dt><dd>Jose Lain + 4 instructors</dd></div>
             <div class="fact"><dt>Course areas</dt><dd>Songwriting, lyric writing, music production, artist development</dd></div>
             <div class="fact"><dt>Delivery model</dt><dd>Fully remote, integrated into CCM's existing academic offering</dd></div>
           </div>
@@ -783,10 +827,10 @@
       <h2 style="margin:14px 0 36px; max-width:18ch;">The Berklee Connection</h2>
       <div class="berklee-row">
         <div>
-          <p style="font-size:16px; color:var(--ink-soft);">José Laín studied at Berklee College of Music in Boston (2011–2015), with a dual concentration in Contemporary Writing &amp; Production and Songwriting — training that shapes how CODA selects and prepares every instructor it places. Several members of CODA's network share that Berklee background, paired with active careers in the industry.</p>
+          <p style="font-size:16px; color:var(--ink-soft);">Jose Lain studied at Berklee College of Music in Boston (2011–2015), with a dual concentration in Contemporary Writing &amp; Production and Songwriting — training that shapes how CODA selects and prepares every instructor it places. Several members of CODA's network share that Berklee background, paired with active careers in the industry.</p>
         </div>
         <div class="credential">
-          <strong>José Laín</strong>
+          <strong>Jose Lain</strong>
           Berklee College of Music, Boston<br>
           B.A., Contemporary Writing &amp; Production<br>
           B.A., Songwriting<br>
@@ -887,13 +931,38 @@
       <h2 style="margin:14px 0 36px;">Meet Our Founder</h2>
       <div class="founder-row">
         <div>
-          <div class="monogram" aria-hidden="true">JL</div>
-          <p class="founder-note">Full instructor profiles and photos available on request.</p>
+          <img class="founder-photo" src="faculty-jose.jpg" alt="Jose Lain, Founder and Academic Director of CODA Music School">
+          <p class="founder-note">Pictured here and below: members of CODA's instructor network. Full faculty bios available on request.</p>
         </div>
         <div>
           <p class="founder-cred">Founder &amp; Academic Director</p>
-          <p style="font-size:16.5px;">José Laín is a musician, composer, producer, and academic director. He studied at Berklee College of Music in Boston (2011–2015), with a dual concentration in Contemporary Writing &amp; Production and Songwriting.</p>
+          <p style="font-size:16.5px;">Jose Lain is a musician, composer, producer, and academic director. He studied at Berklee College of Music in Boston (2011–2015), with a dual concentration in Contemporary Writing &amp; Production and Songwriting.</p>
           <p style="font-size:16.5px;">Beyond directing CODA, he has taught university-level composition and production — including CODA's remote faculty engagement with California College of Music — and personally leads faculty matching for every partnership.</p>
+        </div>
+      </div>
+
+      <p class="faculty-label">A Sample of Our Faculty Network</p>
+      <div class="faculty-grid">
+        <div class="faculty-card">
+          <img src="faculty-luis.jpg" alt="Luis Barrientos">
+          <div class="info">
+            <div class="name">Luis Barrientos</div>
+            <div class="role">Berklee Graduate — Composer / Pianist</div>
+          </div>
+        </div>
+        <div class="faculty-card">
+          <img src="faculty-juanpablo.jpg" alt="Juan Pablo Rubin">
+          <div class="info">
+            <div class="name">Juan Pablo Rubin</div>
+            <div class="role">Tec de Monterrey Graduate — Producer / Engineer</div>
+          </div>
+        </div>
+        <div class="faculty-card">
+          <img src="faculty-paulina.jpg" alt="Paulina Parga">
+          <div class="info">
+            <div class="name">Paulina Parga</div>
+            <div class="role">Berklee Graduate — Songwriter</div>
+          </div>
         </div>
       </div>
     </div>
